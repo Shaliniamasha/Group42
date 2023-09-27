@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIVE4GOOD</title>
-    <link rel="stylesheet" href="G:\SDB\Year 2 -Semester 1\SCS2202 Group Project I\Give4Good\Group42\layout/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
+<header>
         <div class="navbar1">
             <nav>
                 <ul class="nav_links">
@@ -38,11 +38,3 @@
             </ul>
         </div>
     </header>
-    <main>
-        <div class="home-image-container">
-            <img src="G:\SDB\Year 2 -Semester 1\SCS2202 Group Project I\Give4Good\Group42\Assets\homepageimage.png" alt="image">
-        </div>
-    </main>
-</body>
-
-</html>
