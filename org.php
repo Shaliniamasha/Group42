@@ -1,10 +1,11 @@
- <?php 
- require_once('includes/connection.php');
- include('includes/header.php'); ?>
+<?php 
+require_once('includes/connection.php');
+include('includes/header.php'); 
+?>
     <main>
         <div class="home-image-container">
             <img src=" " alt="image">
-            <h1>Home Page</h1>
+            <h1>Organisation Page</h1>
         </div>
     </main>
 <?php 
