@@ -1,5 +1,5 @@
  <?php 
- require_once('includes/connection.php');
+// require_once('includes/connection.php');
  include('includes/header.php'); ?>
     <main>
         <div class="home-image-container">
@@ -9,5 +9,5 @@
     </main>
 <?php 
 include('includes/footer.php'); 
-mysqli_close($connection); 
+//mysqli_close($connection); 
 ?>
