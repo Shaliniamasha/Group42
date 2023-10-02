@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIVE4GOOD</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/new.css">
 </head>
 <body>
-<header>
 <header>
         <div class="nav">
             <div class="navbar1">
@@ -41,9 +40,10 @@
             </div>
         </div>
         <div class="home-image-container">
-            <div class="homepage-image-left"></div>
-            <div class="homepage-image-right">
-                <h1>Home Page</h1>
+            <div class="homepage-image left">
+                <h1>Give a Little, Change a Lot.</h1>
+            </div>
+            <div class="homepage-image right">
             </div>
         </div>
     </header>
