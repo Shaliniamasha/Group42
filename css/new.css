@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     --primary-color: #1A0051;
-    --secondary-color: #64e7e7;
+    --secondary-color: #87f7f7;
     --text-color: #000000;
     --gray-color: rgb(216, 219, 219);
 }
@@ -62,7 +62,7 @@ button {
 }
 
 
-button {
+.white-button {
     color: #292b2c;
     padding: 7px 20px;
     background-color: rgb(255, 255, 255);
@@ -72,7 +72,7 @@ button {
     transition: all 0.3s ease 0s;
 }
 
-button:hover {
+.white-button:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -153,7 +153,7 @@ button:hover {
 
 .left {
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-    background-color: #6abafc; 
+    background-color: var(--secondary-color); 
 }
 
 .right {
@@ -179,7 +179,7 @@ footer {
 
 .grid-donations {
     display: grid;
-    gap: 1.5rem;
+    gap: 4rem;
     padding-block: 2rem;
     width: min(95%, 70rem);
     margin-inline: auto;
@@ -213,7 +213,7 @@ footer {
 
 @media (min-width: 40em) {
     .grid-donations {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
 }
