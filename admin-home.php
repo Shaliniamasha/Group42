@@ -4,7 +4,7 @@ include('includes/header.php');
 ?>
     <main>
         <h1>Signups</h1>
-        <a href="donor_individual.php"><button class="blue-button">Donor Individual</button></a>
+        <a href="donor_individual.php"><button>Donor Individual</button></a>
         <a href="donor_organization.php"><button>Donor Organization</button></a>
         <a href="donee_individual.php"><button>Donee Individual</button></a>
         <a href="donee_organization.php"><button>Donee Organization</button></a>
