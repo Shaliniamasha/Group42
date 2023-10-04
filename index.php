@@ -1,4 +1,3 @@
-<?php
 require_once('includes/connection.php');
 include_once('includes/header.php');
 
@@ -39,4 +38,5 @@ $allFundraisers = $connection->query($sql);
 <?php
 include('includes/footer.php');
 mysqli_close($connection);
+
 ?>
