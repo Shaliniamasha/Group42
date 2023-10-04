@@ -28,15 +28,15 @@
             </div>
             <div class="navbar2">
                 <ul class="nav_links">
-                    <li><a href="#"><button>Dashboard</button></a></li>
+                    <li><a href="#"><button class="white-button">Dashboard</button></a></li>
                 </ul>
                 <form action="" class="search-bar">
                     <input type="text" placeholder="Search give4Good" name="search">
                     <button type="submit"><img src="Assets/icons/search.svg"></button>
                 </form>
                 <ul class="nav_links">
-                    <li><a href="#"><button>Sign Up</button></a></li>
-                    <li><a href="#"><button>Login</button></a></li>
+                    <li><a href="#"><button="white-button">Sign Up</button></a></li>
+                    <li><a href="#"><button class="white-button">Login</button></a></li>
                 </ul>
             </div>
         </div>
