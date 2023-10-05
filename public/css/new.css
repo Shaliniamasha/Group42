@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     --primary-color: #1A0051;
-    --secondary-color: #87f7f7;
+    --secondary-color: #f787db;
     --text-color: #000000;
     --gray-color: rgb(216, 219, 219);
 }
@@ -153,12 +153,13 @@ button {
 
 .left {
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
-    background-color: var(--secondary-color); 
+    background-color: #5fedf1; 
+    border-color: var(--primary-color);
 }
 
 .right {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
-    background-image: url('../Assets/images/homeimage.png');
+    background-image: url('Group42/public/Assets/tryimage3.jpg');
     background-size: 100% 100%;
     margin-left: -25%
 }

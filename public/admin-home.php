@@ -1,6 +1,6 @@
 <?php 
-require_once('includes/connection.php');
-include('includes/header.php'); 
+require_once('../config/connection.php');
+include_once('../app/views/includes/header.php');
 ?>
     <main>
         <h1>Signups</h1>
@@ -20,6 +20,6 @@ include('includes/header.php');
         <a href="Give4Good.php"><button>Give4Good</button></a>
     </main>
 <?php 
-include('includes/footer.php'); 
+include('../app/views/includes/footer.php');
 mysqli_close($connection); 
 ?>
