@@ -154,7 +154,6 @@ button {
 .left {
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
     background-color: #5fedf1; 
-    border-color: var(--primary-color);
 }
 
 .right {
