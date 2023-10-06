@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIVE4GOOD</title>
-
-    <link rel="stylesheet" href="./css/new.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Group42/public/css/new.css">
 </head>
 <body>
 <header>
@@ -17,7 +17,7 @@
                         <li><a href="org.php">Organisations</a></li>
                     </ul>
                 </nav>
-                <img class="logo" src="Assets/icons/logo.svg" alt="logo" height="50px">
+                <img class="logo" src="Group42/public/Assets/icons/logo.svg" alt="logo" height="50px">
                 <nav>
                     <ul class="nav_links">
                         <li><a href="about.php">About</a></li>
@@ -32,10 +32,10 @@
                 </ul>
                 <form action="" class="search-bar">
                     <input type="text" placeholder="Search give4Good" name="search">
-                    <button type="submit"><img src="Assets/icons/search.svg"></button>
+                    <button type="submit"><img src="Group42/public/Assets/icons/search.svg"></button>
                 </form>
                 <ul class="nav_links">
-                    <li><a href="#"><button="white-button">Sign Up</button></a></li>
+                    <li><a href="#"><button class="white-button">Sign Up</button></a></li>
                     <li><a href="#"><button class="white-button">Login</button></a></li>
                 </ul>
             </div>

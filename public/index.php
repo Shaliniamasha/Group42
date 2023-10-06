@@ -1,6 +1,6 @@
-<?php 
-require_once('includes/connection.php');
-include_once('includes/header.php');
+<?php
+require_once('../config/connection.php');
+include_once('../app/views/includes/header.php');
 
 $sql = "SELECT * FROM doneeFundraiserIndv";
 $allFundraisers = $connection->query($sql);
@@ -37,7 +37,7 @@ $allFundraisers = $connection->query($sql);
     </div>
 </main>
 <?php
-include('includes/footer.php');
+include('../app/views/includes/footer.php');
 mysqli_close($connection);
 
 ?>
