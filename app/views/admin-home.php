@@ -19,7 +19,7 @@ include_once('../app/views/includes/header.php');
         <a href="Product selling.php"><button>Product selling</button></a>
         <a href="Give4Good.php"><button>Give4Good</button></a>
     </main>
-<?php 
-include('../app/views/includes/footer.php');
-mysqli_close($connection); 
+    <?php
+include_once('includes/footer.php');
+
 ?>
