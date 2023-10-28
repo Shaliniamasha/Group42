@@ -1,7 +1,6 @@
 <?php
 
-require_once('../config/connection.php');
-class donations
+class M_stories
 {
     private $db;
     public function __construct()
@@ -9,10 +8,10 @@ class donations
         $this->db = new Database;
     }
 
-    public function getDonations() 
+    public function getStories() 
     {
-        $this->db->query('SELECT * FROM doneeFundraiserIndv');
-
+        $this->db->query('SELECT * FROM stories');
+        
         $row = $this->db->resultSet();
 
         //Check row
@@ -23,4 +22,3 @@ class donations
         }
     }
 }
-
