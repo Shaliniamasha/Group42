@@ -1,43 +1,5 @@
 <?php
-require_once('../config/connection.php');
-include_once('../app/views/includes/header.php');
+require_once '../app/bootloader.php';
 
-$sql = "SELECT * FROM doneeFundraiserIndv";
-$allFundraisers = $connection->query($sql);
-?>
-<main>
-    <h3><b>Featured Topics..</b></h3>
-    <div class="grid-donations">
-        <?php
-        while ($row = mysqli_fetch_assoc($allFundraisers)) {
-            ?>
-            <div class="card">
-                <div class="image">
-                    <img src="<?php echo $row["storyImages"]; ?>" alt="image" height="250px" width="250px">
-                </div>
-                <div class="caption">
-                    <p class="progressBar">
-                    </p>
-                    <p class="title">
-                        <?php echo $row["title"]; ?>
-                    </p>
-                    <p class="amount"><b>
-                            <?php echo $row["requiredAmount"]; ?>
-                        </b></p>
-                    <p class="owner">
-                            <?php echo $row["story"]; ?>
-                        </p>
-                </div>
-                <button class="blue-button">Donate</button>
-            </div>
-
-            <?php
-        }
-        ?>
-    </div>
-</main>
-<?php
-include('../app/views/includes/footer.php');
-mysqli_close($connection);
-
+$init = new core;
 ?>
