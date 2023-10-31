@@ -3,9 +3,12 @@
 class M_stories
 {
     private $db;
+    private $table = 'stories';
     public function __construct()
     {
         $this->db = new Database;
+        
+
     }
 
     public function getStories() 
@@ -21,4 +24,11 @@ class M_stories
             return false;
         }
     }
+
+    public function deleteStory($id){
+        $field='id';
+        $this->db->delete($this->table,$field, $id);
+
+    }
+
 }

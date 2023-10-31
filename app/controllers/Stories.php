@@ -10,7 +10,6 @@ class Stories extends controller
         $this->displayStories = $this->model('M_stories');
     }
 
-    
 
     public function displayStories()
     {
@@ -18,5 +17,15 @@ class Stories extends controller
         
         $this->view('V_stories', $data);
     }
+
+    public function removeStory($id)
+    {
+        if ($this->model('M_stories')->deleteStory($id) === false) {
+        echo 'unsuccessfull';
+    }
+    else{
+        echo 'successfull';
+    }
+}
 }
 ?>

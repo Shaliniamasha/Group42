@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 ?>
 
@@ -11,7 +11,8 @@ session_start();
     <title>GIVE4GOOD</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/new.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -20,11 +21,13 @@ session_start();
             <div class="navbar1">
                 <nav>
                     <ul class="nav_links">
-                        <li><a href="postPage.php">Stories</a></li>
+                        <li><a href="<?php echo URLROOT ?>/stories/displayStories">Stories</a></li>
                         <li><a href="org.php">Organisations</a></li>
                     </ul>
                 </nav>
+                <a href="<?php echo URLROOT ?>/donations/home">
                 <img class="logo" src="../public/Assets/icons/logo.svg" alt="logo" height="50px">
+                <a>
                 <nav>
                     <ul class="nav_links">
                         <li><a href="about.php">About us</a></li>
@@ -42,12 +45,15 @@ session_start();
                     <button type="submit"><img src="../public/Assets/icons/search.svg"></button>
                 </form>
                 <ul class="nav_links">
-                    <?php if (isset($_SESSION['usersId'])) {
-                        echo "Hi, " . explode(" ", $_SESSION["usersName"])[0] . "!";
-                    } else { ?>
-                        <li><a href="signup.php"><button class="white-button">Sign Up</button></a></li>
-                        <li><a href="login.php"><button class="white-button">Login</button></a></li>
-                    <?php
+                    <?php if (isset($_SESSION['userId'])) {
+                        echo "Hi, " . explode(" ", $_SESSION["userName"])[0] . "!";
+                    } else { ?><script>
+                        var myVariable = <?php echo json_encode($_SESSION['userId']); ?>;
+                        console.log(myVariable);
+                    </script>
+                        <li><a href="<?php echo URLROOT ?>/signup"><button class="white-button">Sign Up</button></a></li>
+                        <li><a href="<?php echo URLROOT ?>/login"><button class="white-button">Login</button></a></li>
+                        <?php
                     }
                     ?>
                 </ul>
@@ -55,7 +61,12 @@ session_start();
         </div>
         <div class="home-image-container">
             <div class="homepage-image left">
-                <h1>Give a Little, Change a Lot.</h1>
+                <div class="home-left-text-con">
+                    <h1>Give a Little, Change a Lot.</h1>
+                </div>
+                <div class="home-left-image-con">
+                    <img src="/give4good/public/Assets/images/home-left.png" alt="image" class="home-left-image">
+                </div>
             </div>
             <div class="homepage-image right">
             </div>
