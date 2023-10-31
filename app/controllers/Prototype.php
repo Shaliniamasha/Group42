@@ -1,20 +1,20 @@
 <?php
 class Prototype extends controller
 {
-    private $prototypeModel;
-    public function __construct()
-    {
-        $this->prototypeModel = $this->model('M_model');
+    // private $prototypeModel;
+    // public function __construct()
+    // {
+    //     $this->prototypeModel = $this->model('M_model');
 
     
-    }
+    // }
+
+    // public function index(){
+
+    // }
 
     public function index(){
-
-    }
-
-    public function home(){
-        $this->view('admin-home');
+        $this->view('V_viewfile');
 }
 }
 ?>
