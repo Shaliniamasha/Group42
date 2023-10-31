@@ -62,4 +62,12 @@ class Database {
     public function rowCount(){
         return $this->stmt->rowCount();
     }
+
+    public function delete($table, $field, $value, $limit = 1){
+        $this->query("DELETE FROM $table WHERE $field = :value LIMIT $limit");
+        $this->bind(':value', $value);
+        return $this->execute();
+    }
+
+    
 }

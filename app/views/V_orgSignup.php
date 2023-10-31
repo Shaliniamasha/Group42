@@ -1,45 +1,13 @@
-<?php
+<?php require APPROOT . '/views/includes/login_header.php' ?>
 
-include_once('../helpers/session_helper.php');
-
-flash('register');
-
-?>
-
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>GIVE4GOOD</title>
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-   <!--=============== CSS ===============-->
-   <link rel="stylesheet" href="../public/css/new.css">
-
-</head>
-
-<body>
-   <main>
-      <div class="login-container">
-         <div class="left-col">
-            <div class="horizontal-border"></div>
-            <div class="container2">
-               <div class="vertical-border"></div>
-               <div class="login-image"></div>
-            </div>
-            <div class="horizontal-border"></div>
-         </div>
          <div class="right-col">
             <div class="login">
-               <form method="post" action="../controllers/individualDonors.php" class="login__form">
+               <form method="post" action="OrgUsers" class="login__form">
                   <h1 class="login__title">Signup</h1>
 
                   <div class="login__content">
                      <div class="login__box">
-                        <input type="hidden" name="type" value="register">
+                        <input type="hidden" name="type" value="signup">
                         <i class="ri-user-3-line login__icon"></i>
 
                         <div class="login__box-input">
@@ -48,7 +16,7 @@ flash('register');
                         </div>
                      </div>
                      <div class="login__box">
-                        <i class="ri-user-3-line login__icon"></i>
+                     <i class="fa-regular fa-envelope"></i>
 
                         <div class="login__box-input">
                            <input type="email" required class="login__input" name="email" id="email">
@@ -91,7 +59,7 @@ flash('register');
                   <button type="submit" class="login__button">Signup</button>
 
                   <p class="login__register">
-                     Already have an account? <a href="login.php">Login</a>
+                     Already have an account? <a href="<?php echo URLROOT ?>/login">Login</a>
                   </p>
                </form>
             </div>
@@ -101,10 +69,6 @@ flash('register');
 
          </div>
       </div>
-   </main>
 </body>
 
 </html>
-<?php /*
-mysqli_close($connection); */
-?>

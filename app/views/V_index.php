@@ -1,8 +1,8 @@
 <?php require APPROOT . '/views/includes/header.php' ?>
-<main>
-    <h1><b>Featured Topics..</b></h1>
+<main><div class="container">
+    <h1><b>Featured Topics...</b></h1>
     <div class="grid-donations">
-        <?php
+        <?php 
         foreach ($data as $donation) {
             ?>
 
@@ -32,5 +32,6 @@
 
 
     </div>
+    <div>
 </main>
 <?php require APPROOT . '/views/includes/footer.php' ?>

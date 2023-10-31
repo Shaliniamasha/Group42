@@ -1,7 +1,5 @@
 <?php
-
-require_once('../config/connection.php');
-class individualDonor {
+class M_individualUser {
     private $db;
     public function __construct() 
     {
@@ -39,17 +37,6 @@ class individualDonor {
         }
     }
 
-    public function login($emailOrUsername, $password){
-        $row = $this->findUserByEmailOrUsername($emailOrUsername, $emailOrUsername);
-
-        if($row == false) return false;
-
-        $hashedPassword = $row->password;
-        if(password_verify($password, $hashedPassword)){
-            return $row;
-        }else{
-            return false;
-        }
-    }
+   
 
 }
