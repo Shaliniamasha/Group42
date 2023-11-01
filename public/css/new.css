@@ -5,8 +5,8 @@
   margin: 0px;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  --primary-color:#24262b;
-  --secondary-color: #8f5952;
+  --primary-color:#0742d6;
+  --secondary-color: #FFA07A;
   --text-color: #000000;
   --gray-color: rgb(216, 219, 219);
   --white-color: hsl(0, 0%, 100%);
@@ -174,7 +174,7 @@ button {
   background-color: white;
 }
 
-.left {
+.left { 
   clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
   background-color: var(--secondary-color);
 }
@@ -207,6 +207,22 @@ button {
   background-image: url('../Assets/images/12.jpg');
   background-size: 100% 100%;
   margin-left: -25%
+}
+
+.donate_box{
+
+  width: 200px;
+    height: 100px;
+    z-index: 20;
+    padding: 30px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+    margin-right: 25rem;
+  background: var(--white-color);
+    color: #323332;
+  border-radius: 10px;
+  
+
 }
 
 /* footer css begginning */
