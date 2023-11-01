@@ -20,6 +20,29 @@ class M_donation
         } else {
             return false;
         }
+
     }
+
+
+
+    public function startfundraiser($data){
+        $this->db->query('INSERT INTO doneefundraiserindv (requiredAmount, storyImages, title, story, requirementEndDate, category) 
+        VALUES (:requiredAmount, :storyImages, :title, :story,  :requirementEndDate, :category)');
+        //Bind values
+        $this->db->bind(':requiredAmount', $data['requiredAmount']);
+        $this->db->bind(':storyImages', $data['storyImages']);
+        $this->db->bind(':title', $data['title']);
+        $this->db->bind(':story', $data['story']);
+        $this->db->bind(':requirementEndDate', $data['requirementEndDate']);
+        $this->db->bind(':category', $data['category']);
+
+        //Execute
+        if($this->db->execute()){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 }
 

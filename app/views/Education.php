@@ -10,10 +10,12 @@
 
                     <legend><span class="number">1</span> Basic Information on Fundraiser</legend>
 
+                    <input type="hidden" name="type" value="Education">
+                    
                     <label for="target">Your Goal for the fundraiser:</label>
                     <textarea id="target" name="fr_target"></textarea>
                     <br><br>
-                    
+
                     <label for="image">Upload an Image for cover photo:</label>
                     <input required class="form" type="file" id="image" name="fr_image">
 

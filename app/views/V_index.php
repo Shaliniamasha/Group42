@@ -1,4 +1,4 @@
-<?php require APPROOT . '/views/includes/header.php' ?>
+<?php require_once APPROOT . '/views/includes/header.php' ?>
 <main><div class="container">
     <h1><b>Featured Topics...</b></h1>
     <div class="grid-donations">
