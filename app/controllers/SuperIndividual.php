@@ -48,7 +48,7 @@ class SuperIndividual extends controller
 
         
 
-        //User with the same nic or passwordz already exists
+        //User with the same nic or fullname already exists
         if ($this->superIndividualModel->findUserByEmailOrUsername($data['nic'], $data['username'])) {
             flash("signup", "Already registered");
             redirect(URLROOT . '/Donations/home');
