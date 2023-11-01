@@ -52,6 +52,10 @@ class StartFund extends controller
         $this->view('Sport');
     }
 
+    public function Commonclass(){
+        $this->view('Common');
+    }
+
     public function FundraiserForm($category)
     {
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);

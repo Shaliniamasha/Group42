@@ -10,45 +10,35 @@
 
                     <legend><span class="number">1</span> Basic Information on Fundraiser</legend>
 
-                    <label for="material">Type of Material:</label>
-                    <textarea id="material" name="material"></textarea>
-
-                    <label for="amount">Amount you need:</label>
-                    <textarea id="amount" name="amount" placeholder= "No of items/Weight"></textarea>
-                </fieldset>
-
-                <fieldset>
+                    <input type="hidden" name="type" value="Education">
+                    
+                    <label for="target">Your Goal for the fundraiser:</label>
+                    <textarea id="target" name="fr_target"></textarea>
+                    <br><br>
 
                     <label for="image">Upload an Image for cover photo:</label>
-                    <input class="form" type="file" id="image" name="image">
+                    <input required class="form" type="file" id="image" name="fr_image">
 
                     <label for="topic">Enter topic for fundraiser:</label>
-                    <textarea id="topic" name="topic"></textarea>
+                    <textarea id="topic" name="fr_topic"></textarea>
 
                     <label for="discpription">Enter your story for donors:</label>
-                    <textarea id="discpription" name="disc"></textarea>
+                    <textarea id="discpription" name="fr_disc"></textarea>
 
                     <label for="date">Select a target Date:</label>
                     <input class="form" type="date" id="date" name="selected_date">
 
-                    <label for="addresses">Addresses for sending materials (comma-separated):</label>
-                    <input type="text" id="addresses" name="addresses">
-
-            
-                    <div id="map" style="height: 300px; width: 100%;"></div>
-
                 </fieldset>
-
+<!-- 
                 <fieldset>
                     <legend><span class="number">2</span> Documents required to verify fundraiser.</legend>
 
-                    <p>Provide Documents to verify the fundraiser</p>
-                    <p>Ex -: If it is bulding Material proof that you are building or renovating a house.(Plans/Police report/Utility Bills)</p>
+                    <p>1. Approval by educational institue principal/director. (Signed Letter with your Name)</p>
 
-                    <label for="docs">Relavant documents:</label>
-                    <input required class="form" type="file" id="docs" name="docs[]" multiple>
+                    <label for="doc1">Upload an Image of the letter:</label>
+                    <input required class="form" type="file" id="doc1" name="fr_doc1">
 
-                    <!-- <p>2. Approval by Gramaniladhari or a person of higher status in administration stating that you are eligable for the Fundraiser.</p>
+                    <p>2. Approval by Gramaniladhari or a person of higher status in administration stating that you are eligable for the Fundraiser.</p>
 
                     <label for="doc2">Upload an Image of the letter:</label>
                     <input required class="form" type="file" id="doc2" name="fr_doc2">
@@ -56,13 +46,13 @@
                     <p>3. Approval by residential policestation confirming you reside in the given address of the above letter.</p>
 
                     <label for="doc3">Upload an Image of the letter:</label>
-                    <input required class="form" type="file" id="doc3" name="fr_doc3"> -->
+                    <input required class="form" type="file" id="doc3" name="fr_doc3">
                 
-                </fieldset>
+                </fieldset> -->
+<!-- 
+                <fieldset>
 
-                <!-- <fieldset>
-
-                    <legend><span class="number">2</span> Documents to verify fundraiser</legend>
+                    <legend><span class="number">3</span> Documents to verify fundraiser</legend>
 
                     <label for="docs">Upload all Documents Required:</label>
                     <input class="form" type="file" id="docs" name="fr_docs[]" multiple>
