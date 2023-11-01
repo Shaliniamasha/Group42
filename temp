@@ -1,0 +1,7 @@
+<?php require APPROOT . '/views/includes/header.php' ?>
+
+<head> <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/1.css"></head>
+<main>
+          
+            </main>
+<?php require APPROOT . '/views/includes/footer.php' ?>
