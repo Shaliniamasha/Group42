@@ -17,6 +17,18 @@ class StartFund extends controller
                 $type = $_POST['type']=="Education";
                 $this->FundraiserForm($_POST['type']);
             } 
+            if($_POST){
+                $type = $_POST['type']=="Health";
+                $this->FundraiserForm($_POST['type']);
+            } 
+            if($_POST){
+                $type = $_POST['type']=="Sport";
+                $this->FundraiserForm($_POST['type']);
+            } 
+            if($_POST){
+                $type = $_POST['type']=="Housing";
+                $this->FundraiserForm($_POST['type']);
+            } 
             else {     
             $this->view('V_selectTypeInd');
             }
@@ -62,7 +74,7 @@ class StartFund extends controller
         } else {
             die("Something went wrong");
         }
-}
+    }
 
 }
 ?>

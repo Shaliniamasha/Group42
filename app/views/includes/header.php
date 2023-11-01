@@ -31,7 +31,7 @@ session_start();
                 <nav>
                     <ul class="nav_links">
                         <li><a href="about.php">About us</a></li>
-                        <li><a href="<?php echo URLROOT ?>/StartFund">Start a Fundraiser</a></li>
+                        <li><a href="<?php echo URLROOT ?>/FundType">Start a Fundraiser</a></li>
                     </ul>
                 </nav>
 
