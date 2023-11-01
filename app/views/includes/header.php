@@ -26,6 +26,7 @@ session_start();
                     </ul>
                 </nav>
                 <a href="<?php echo URLROOT ?>/donations/home">
+<<<<<<< HEAD
                 <img class="logo" src="../public/Assets/icons/logo.svg" alt="logo" height="50px">
                 <a>
                 <nav>
@@ -34,6 +35,16 @@ session_start();
                         <li><a href="<?php echo URLROOT ?>/StartFund">Start a Fundraiser</a></li>
                     </ul>
                 </nav>
+=======
+                    <img class="logo" src="../public/Assets/icons/logo.svg" alt="logo" height="50px">
+                    <a>
+                        <nav>
+                            <ul class="nav_links">
+                                <li><a href="about.php">About us</a></li>
+                                <li><a href="startFundraiser.php">Start a Fundraiser</a></li>
+                            </ul>
+                        </nav>
+>>>>>>> 0ce759e26310164dda3c00ba6ae38e6366589254
 
             </div>
             <div class="navbar2">
@@ -47,10 +58,11 @@ session_start();
                 <ul class="nav_links">
                     <?php if (isset($_SESSION['userId'])) {
                         echo "Hi, " . explode(" ", $_SESSION["userName"])[0] . "!";
-                    } else { ?><script>
-                        var myVariable = <?php echo json_encode($_SESSION['userId']); ?>;
-                        console.log(myVariable);
-                    </script>
+                    } else { ?>
+                        <script>
+                            var myVariable = <?php echo json_encode($_SESSION['userId']); ?>;
+                            console.log(myVariable);
+                        </script>
                         <li><a href="<?php echo URLROOT ?>/signup"><button class="white-button">Sign Up</button></a></li>
                         <li><a href="<?php echo URLROOT ?>/login"><button class="white-button">Login</button></a></li>
                         <?php
@@ -69,6 +81,10 @@ session_start();
                 </div>
             </div>
             <div class="homepage-image right">
+            <div class="donate_box">
+                        <h1 class="price">Donate</h1>
+                        <h5>Make a difference</h5>
+                    </div>
             </div>
         </div>
     </header>
