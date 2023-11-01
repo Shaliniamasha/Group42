@@ -26,14 +26,14 @@ session_start();
                     </ul>
                 </nav>
                 <a href="<?php echo URLROOT ?>/donations/home">
-                    <img class="logo" src="../public/Assets/icons/logo.svg" alt="logo" height="50px">
-                    <a>
-                        <nav>
-                            <ul class="nav_links">
-                                <li><a href="about.php">About us</a></li>
-                                <li><a href="startFundraiser.php">Start a Fundraiser</a></li>
-                            </ul>
-                        </nav>
+                <img class="logo" src="../public/Assets/icons/logo.svg" alt="logo" height="50px">
+                <a>
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="about.php">About us</a></li>
+                        <li><a href="<?php echo URLROOT ?>/StartFund">Start a Fundraiser</a></li>
+                    </ul>
+                </nav>
 
             </div>
             <div class="navbar2">
