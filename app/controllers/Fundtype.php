@@ -14,13 +14,15 @@ class FundType extends controller
     // }
 
     public function index(){
-        if ($_SESSION['userType'] == 'Indv'){
-        $this->view('V_frType');
+        if ($_SESSION['userStatus'] == 0){
+            $this->view('V_frType');
+        } else if ($_SESSION['userStatus'] == 1){
+            // Add code specific to 'Org' user type
+            $this->view('orgView'); // For example, displaying a view for organizations
+            // Other actions specific to organizations
+        }
     }
-    else if ($_SESSION['userType'] == 'Org'){
-
-    }
-}
+    
     
     public function Moneyclass(){
         $this->view('V_selectTypeInd');
