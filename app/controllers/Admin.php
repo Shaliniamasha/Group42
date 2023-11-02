@@ -20,10 +20,84 @@ class Admin extends controller
         else {     
         $this->view('V_adminSignup');
         }
-        
+    }  
+    
+    public function admin_home(){
+        $this->view('V_adminHome');
     }
 
+    public function adminaddadmin(){
+        $this->view('AdminaddAdmin');
+    }
+
+    public function admindash(){
+        $this->view('Admindashboard');
+    }
     
+    public function admindonations(){
+        $this->view('AdminDonations');
+    }
+
+    public function admindoneeindv_act(){
+        $this->view('AdmindoneeIndividuals-active');
+    }
+
+    public function admindonee_deact(){
+        $this->view('AdmindoneeIndividuals-deactivated');
+    }
+
+    public function admindonee_pend(){
+        $this->view('AdmindoneeIndividuals-pending');
+    }
+
+    public function admindoneeindv(){
+        $this->view('AdmindoneeIndividuals');
+    }
+
+    public function admindoneeorg_act(){
+        $this->view('AdmindoneeOrganizations-active');
+    }
+
+    public function admindoneeorg_deact(){
+        $this->view('dmindoneeOrganizations-deactived');
+    }
+
+    public function admindoneeorg_pend(){
+        $this->view('dmindoneeOrganizations-pending');
+    }
+
+    public function admindoneeorg(){
+        $this->view('AdmindoneeOrganizations');
+    }
+
+    public function admindonorindv(){
+        $this->view('AdmindonorIndividuals');
+    }
+
+    public function admindonororg(){
+        $this->view('AdmindonorOrganizations');
+    }
+
+    public function adminfund_act(){
+        $this->view('AdminFundraisers-active');
+    }
+
+    public function adminfund_deact(){
+        $this->view('AdminFundraisers-deactivated');
+    }
+
+    public function adminfund_pend(){
+        $this->view('AdminFundraisers-pending');
+    }
+
+    public function adminstory_act(){
+        $this->view('AdminStories-active');
+    }
+
+    public function adminstory_pend(){
+        $this->view('AdminStories-pending');
+    }
+
     public function signup()
     {
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
@@ -74,9 +148,7 @@ class Admin extends controller
             die("Something went wrong");
         }
 
-    }
-
-    
+    }    
 
 }
 
