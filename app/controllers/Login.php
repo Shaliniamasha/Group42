@@ -61,14 +61,20 @@ class Login extends controller
         $_SESSION['userId'] = $user->id;
         $_SESSION['userName'] = $user->username;
         $_SESSION['userEmail'] = $user->email;
+        $_SESSION['userType'] = $user->type;
+        $_SESSION['userStatus'] = $user->status;
+
+
         redirect(URLROOT . '/Donations/home');
+
     }
 
     public function logout(){
         unset ($_SESSION['userId']);
-        unset ($_SESSION['userType']);
         unset($_SESSION['userName']);
         unset($_SESSION['userEmail']);
+        unset ($_SESSION['userType']);        
+        unset ($_SESSION['userStatus']);
         session_destroy();
         redirect(URLROOT . '/Donations/home');
     }

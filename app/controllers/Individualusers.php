@@ -31,12 +31,14 @@ class Individualusers extends controller
             'username' => trim($_POST['username']),
             'email' => trim($_POST['email']),
             'password' => trim($_POST['password']),
-            'confirmpassword' => trim($_POST['confirmpassword'])
+            'confirmpassword' => trim($_POST['confirmpassword']),
+            'type' => ('Indv'),
+            'status' =>('Org')
         ];
 
         //validate inputs
         if (empty($data['username']) || empty($data['email']) || empty($data['password']) || empty($data['confirmpassword'])) {
-            flash("register", "Please fill out all inputs");
+            flash("signup", "Please fill out all inputs");
             redirect(URLROOT . '/Individualusers');
         }
 

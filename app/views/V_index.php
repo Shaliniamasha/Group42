@@ -1,5 +1,6 @@
 <?php require APPROOT . '/views/includes/header.php' ?>
-<main><div class="container">
+<main>
+    <div class="container">
     <h1><b>Featured Topics...</b></h1>
     <div class="grid-donations">
         <?php 
@@ -24,7 +25,9 @@
                         <?php echo $donation->story; ?>
                     </p>
                 </div>
-                <button class="blue-button">Donate</button>
+                <li><a href="<?php echo URLROOT ?>/fundraiser/<?php echo $donation->id ?>"> <button class="blue-button">Donate</button></a></li>
+                       
+               
             </div>
             <?php
         }

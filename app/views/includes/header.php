@@ -21,19 +21,20 @@ session_start();
             <div class="navbar1">
                 <nav>
                     <ul class="nav_links">
-                        <li><a href="<?php echo URLROOT ?>/stories/displayStories">Stories</a></li>
+                        <li><a href="<?php echo URLROOT ?>/stories/all">Stories</a></li>
                         <li><a href="org.php">Organisations</a></li>
                     </ul>
                 </nav>
                 <a href="<?php echo URLROOT ?>/donations/home">
-                <img class="logo" src="../public/Assets/icons/logo.svg" alt="logo" height="50px">
+                <img class="logo" src="<?php echo URLROOT ?>/public/Assets/icons/logo.svg" alt="logo" height="50px">
                 <a>
                 <nav>
                     <ul class="nav_links">
-                        <li><a href="about.php">About us</a></li>
-                        <li><a href="startFundraiser.php">Start a Fundraiser</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="<?php echo URLROOT ?>/StartFund">Start a Fundraiser</a></li>
                     </ul>
                 </nav>
+
 
             </div>
             <div class="navbar2">
@@ -42,15 +43,16 @@ session_start();
                 </ul>
                 <form action="" class="search-bar">
                     <input type="text" placeholder="Search Give4Good" name="search">
-                    <button type="submit"><img src="../public/Assets/icons/search.svg"></button>
+                    <button type="submit"><img src="<?php echo URLROOT ?>/public/Assets/icons/search.svg"></button>
                 </form>
                 <ul class="nav_links">
                     <?php if (isset($_SESSION['userId'])) {
                         echo "Hi, " . explode(" ", $_SESSION["userName"])[0] . "!";
-                    } else { ?><script>
-                        var myVariable = <?php echo json_encode($_SESSION['userId']); ?>;
-                        console.log(myVariable);
-                    </script>
+                    } else { ?>
+                        <script>
+                            var myVariable = <?php echo json_encode($_SESSION['userId']); ?>;
+                            console.log(myVariable);
+                        </script>
                         <li><a href="<?php echo URLROOT ?>/signup"><button class="white-button">Sign Up</button></a></li>
                         <li><a href="<?php echo URLROOT ?>/login"><button class="white-button">Login</button></a></li>
                         <?php
@@ -69,6 +71,10 @@ session_start();
                 </div>
             </div>
             <div class="homepage-image right">
+            <div class="donate_box">
+                        <h1 class="price">Donate</h1>
+                        <h5>Make a difference</h5>
+                    </div>
             </div>
         </div>
     </header>

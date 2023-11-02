@@ -6,7 +6,7 @@
             <h1><b>Latest Stories...</b></h1>
         </div>
         <div class="add">
-        <a href="<?php echo URLROOT ?>/stories/addStory"><i class="fa-solid fa-circle-plus fa-4x"></i></a>
+        <a href="<?php echo URLROOT ?>/stories/create"><i class="fa-solid fa-circle-plus fa-4x"></i></a>
         </div>
     </div>
     <div class="grid-donations stories">

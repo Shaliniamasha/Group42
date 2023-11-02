@@ -7,7 +7,7 @@ class M_model
     {
         $this->db = new Database;
     }
-
+}
 //     public function getStories() 
 //     {
 //         $this->db->query('SELECT * FROM stories');
@@ -21,4 +21,3 @@ class M_model
 //             return false;
 //         }
 //     }
-}
