@@ -109,3 +109,21 @@ label.light {
         max-width: 480px;
     }
 }
+
+
+/*Merch css*/
+
+#merchandise-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#merchandise-form,
+#merchandise-list {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
