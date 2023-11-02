@@ -13,6 +13,7 @@
             <img class= "img1" src="./public/Assets/images/money.jpg" alt="Money">
             <p>Monetary Fundraiser</p>
         </a>
+
     </div>
 
 </main>

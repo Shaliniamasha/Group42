@@ -17,15 +17,15 @@ class StartFund extends controller
                 $type = $_POST['type']=="Education";
                 $this->FundraiserForm($_POST['type']);
             } 
-            if($_POST){
+            else if($_POST){
                 $type = $_POST['type']=="Health";
                 $this->FundraiserForm($_POST['type']);
             } 
-            if($_POST){
+            else if($_POST){
                 $type = $_POST['type']=="Sport";
                 $this->FundraiserForm($_POST['type']);
             } 
-            if($_POST){
+            else if($_POST){
                 $type = $_POST['type']=="Housing";
                 $this->FundraiserForm($_POST['type']);
             } 
@@ -52,9 +52,9 @@ class StartFund extends controller
         $this->view('Sport');
     }
 
-    public function Commonclass(){
-        $this->view('Common');
-    }
+    // public function Commonclass(){
+    //     $this->view('Common');
+    // }
 
     public function FundraiserForm($category)
     {

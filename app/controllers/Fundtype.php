@@ -14,9 +14,14 @@ class FundType extends controller
     // }
 
     public function index(){
+        if ($_SESSION['userType'] == 'Indv'){
         $this->view('V_frType');
     }
+    else if ($_SESSION['userType'] == 'Org'){
 
+    }
+}
+    
     public function Moneyclass(){
         $this->view('V_selectTypeInd');
     }
@@ -24,6 +29,11 @@ class FundType extends controller
     public function Materialclass(){
         $this->view('V_materialDonInd');
     }
+    // public function Merchclass(){
+    //     $this->view('V_Merch');
+    // }
+
+
 
 }
 ?>
