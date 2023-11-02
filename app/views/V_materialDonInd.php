@@ -10,28 +10,28 @@
 
                     <legend><span class="number">1</span> Basic Information on Fundraiser</legend>
 
-                    <label for="material">Type of Material:</label>
+                    <label for="material">Type of Material<span class="required">*</span>:</label>
                     <textarea id="material" name="material"></textarea>
 
-                    <label for="amount">Amount you need:</label>
+                    <label for="amount">Amount you need<span class="required">*</span>:</label>
                     <textarea id="amount" name="amount" placeholder= "No of items/Weight"></textarea>
                 </fieldset>
 
                 <fieldset>
 
-                    <label for="image">Upload an Image for cover photo:</label>
+                    <label for="image">Upload an Image for cover photo<span class="required">*</span>:</label>
                     <input class="form" type="file" id="image" name="image">
 
-                    <label for="topic">Enter topic for fundraiser:</label>
+                    <label for="topic">Enter topic for fundraiser<span class="required">*</span>:</label>
                     <textarea id="topic" name="topic"></textarea>
 
-                    <label for="discpription">Enter your story for donors:</label>
+                    <label for="discpription">Enter your story for donors<span class="required">*</span>:</label>
                     <textarea id="discpription" name="disc"></textarea>
 
-                    <label for="date">Select a target Date:</label>
+                    <label for="date">Select a target Date<span class="required">*</span>:</label>
                     <input class="form" type="date" id="date" name="selected_date">
 
-                    <label for="addresses">Addresses for sending materials (comma-separated):</label>
+                    <label for="addresses">Addresses for sending materials (comma-separated)<span class="required">*</span>:</label>
                     <input type="text" id="addresses" name="addresses">
 
             
@@ -45,7 +45,7 @@
                     <p>Provide Documents to verify the fundraiser</p>
                     <p>Ex -: If it is bulding Material proof that you are building or renovating a house.(Plans/Police report/Utility Bills)</p>
 
-                    <label for="docs">Relavant documents:</label>
+                    <label for="docs">Relavant documents<span class="required">*</span>:</label>
                     <input required class="form" type="file" id="docs" name="docs[]" multiple>
 
                     <!-- <p>2. Approval by Gramaniladhari or a person of higher status in administration stating that you are eligable for the Fundraiser.</p>

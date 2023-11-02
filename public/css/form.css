@@ -118,3 +118,7 @@
   
   }
   
+  .required {
+    color: red;
+    margin-left: 5px; /* Add some space between the label text and the asterisk */
+}

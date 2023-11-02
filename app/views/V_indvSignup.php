@@ -12,7 +12,7 @@
 
                <div class="login__box-input">
                   <input type="text" required class="login__input" name="username" id="username">
-                  <label for="username" class="login__label">Username</label>
+                  <label for="username" class="login__label">Username<span class="required">*</span></label>
                </div>
             </div>
             <div class="login__box">
@@ -20,7 +20,7 @@
 
                <div class="login__box-input">
                   <input type="email" required class="login__input" name="email" id="email">
-                  <label for="email" class="login__label">Email</label>
+                  <label for="email" class="login__label">Email<span class="required">*</span></label>
                </div>
             </div>
 
@@ -29,7 +29,7 @@
 
                <div class="login__box-input">
                   <input type="password" required class="login__input" name="password" id="login-pass" placeholder=" ">
-                  <label for="password" class="login__label">Password</label>
+                  <label for="password" class="login__label">Password<span class="required">*</span></label>
                   <i class="ri-eye-off-line login__eye" id="login-eye"></i>
                </div>
             </div>
@@ -40,7 +40,7 @@
                <div class="login__box-input">
                   <input type="password" required class="login__input" name="confirmpassword" id="login-pass"
                      placeholder=" ">
-                  <label for="confirmpassword" class="login__label">Confirm Password</label>
+                  <label for="confirmpassword" class="login__label">Confirm Password<span class="required">*</span></label>
                   <i class="ri-eye-off-line login__eye" id="login-eye"></i>
                </div>
             </div>

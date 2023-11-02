@@ -13,13 +13,13 @@
           <legend><span class="number">1</span> Your Info</legend>
           <input type="hidden" name="type" value="signup">
           
-          <label for="username">Full name:</label>
+          <label for="username">Full name<span class="required">*</span>:</label>
           <input required type="text" id="username" name="username">
         
-          <label for="nic">NIC:</label>
+          <label for="nic">NIC<span class="required">*</span>:</label>
           <input required type="text" id="nic" name="nic">
        
-          <label for="nic_image">Upload NIC Image:</label>
+          <label for="nic_image">Upload NIC Image<span class="required">*</span>:</label>
                     <input required type="file" id="nic_image" name="nic_image">
 
         
@@ -31,20 +31,20 @@
         
         <legend><span class="number">2</span> Your Bank Details</legend>
         
-        <label for="bank_code">Bank Code:</label>
+        <label for="bank_code">Bank Code<span class="required">*</span>:</label>
           <input required type="text" id="bank_code" name="bank_code">
 
-          <label for="bank_name">Bank Name:</label>
+          <label for="bank_name">Bank Name<span class="required">*</span>:</label>
           <input required type="text" id="bank_name" name="bank_name">
      
-          <label for="branch_code">Branch Code:</label>
+          <label for="branch_code">Branch Code<span class="required">*</span>:</label>
           <input required type="text" id="branch_code" name="branch_code">
        
         
-          <label for="branch_name">Branch Name:</label>
+          <label for="branch_name">Branch Name<span class="required">*</span>:</label>
           <input required type="text" id="branch_name" name="branch_name">
     
-       <label for="bank_pbook">Upload Bank Pass Book Image:</label>
+       <label for="bank_pbook">Upload Bank Pass Book Image<span class="required">*</span>:</label>
                     <input required type="file" id="bank_pbook" name="bank_pbook">
 
                     </fieldset>

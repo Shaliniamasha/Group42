@@ -6,21 +6,21 @@
     <h1>Choose type of Fundraiser:</h1>
     <div class="option-container">
         <a href="<?php echo URLROOT ?>/StartFund/Houseclass">
-            <img class= "img1" src="./public/Assets/images/Housing.jpg" alt="Housing">
+            <img class= "img1" src="../public/Assets/images/Housing.jpg" alt="Housing">
             <p>Fundraiser for Housing</p>
         </a>
 
         <a href="<?php echo URLROOT ?>/StartFund/Healthclass">
-            <img class= "img1" src="./public/Assets/images/Health.jpg" alt="Health">
+            <img class= "img1" src="../public/Assets/images/Health.jpg" alt="Health">
             <p>Fundraiser for Medical Reasons</p>
         </a>
 
         <a href="<?php echo URLROOT ?>/StartFund/Educationclass">
-            <img class= "img1" src="./public/Assets/images/Education.jpg" alt="Education">
+            <img class= "img1" src="../public/Assets/images/Education.jpg" alt="Education">
             <p>Fundraiser for Educational purpose</p>
         </a>
         <a href="<?php echo URLROOT ?>/StartFund/Sportclass">
-            <img class= "img1" src="./public/Assets/images/Sports.jpg" alt="Sports">
+            <img class= "img1" src="../public/Assets/images/Sports.jpg" alt="Sports">
             <p>Fundraiser for Sports</p>
         </a>
     </div>

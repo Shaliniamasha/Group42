@@ -38,22 +38,22 @@
 
                 <fieldset>
 
-                <label for="stock">Stock Available:</label>
+                <label for="stock">Stock Available<span class="required">*</span>:</label>
                 <input type="number" id="stock" name="p_stock" required>
 
-                <label for="colors">Colors (up to 4):</label>
+                <label for="colors">Colors <span class="required">*</span>:</label>
                 <input type="text" id="colors" name="p_colour1" placeholder="Colour 1">
 
-                <label for="colors">Colors (up to 4):</label>
+                <label for="colors">Colors :</label>
                 <input type="text" id="colors" name="p_colour2" placeholder="Colour 2">
 
-                <label for="colors">Colors (up to 4):</label>
+                <label for="colors">Colors :</label>
                 <input type="text" id="colors" name="p_colour3" placeholder="Colour 3">
 
-                <label for="colors">Colors (up to 4):</label>
+                <label for="colors">Colors :</label>
                 <input type="text" id="colors" name="p_colour4" placeholder="Colour 4">
 
-                <label for="price">Price:</label>
+                <label for="price">Price<span class="required">*</span>:</label>
                 <input type="number" id="price" name="p_price" required>
 
                 <button class="form" type="submit">Add Merchandise</button>
