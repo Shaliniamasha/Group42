@@ -1,17 +1,15 @@
 <?php
-
-class M_superIndividual
-{
+class M_superIndividual {
     private $db;
-    public function __construct()
+    public function __construct() 
     {
         $this->db = new Database;
     }
 
-    public function checkTable($email, $username, $table){
-        $this->db->query('SELECT * FROM '.$table.' WHERE username = :username OR email = :email');
+    public function findUserByEmailOrUsername($nic, $username){
+        $this->db->query('SELECT * FROM indvdonee WHERE username = :username OR nic = :nic');
         $this->db->bind(':username', $username);
-        $this->db->bind(':email', $email);
+        $this->db->bind(':nic', $nic);
 
         $row = $this->db->single();
 
@@ -21,34 +19,30 @@ class M_superIndividual
         }else{
             return false;
         }
-
     }
 
-    public function validateLogin($email, $username) {
-        $tables = ['orgusers', 'admin', 'individualdonor'];
-        foreach ($tables as $table) {
-            $row = $this->checkTable($email, $username, $table);
-            
-            if ($row !== false) {
-                return $row; // User found in a table, return the user data
-            }
-        }
-        
-        return false; // User not found in any table
-    }
+    public function register($data){
+        $this->db->query('INSERT INTO indv_donee (username, nic, nic_image, bank_code, bank_name, branch_code, branch_name, bank_pbook) 
+        VALUES (:username, :nic, :nic_image, :bank_code, :bank_name, :branch_code, :branch_name, :bank_pbook) 
+        )');
+        //Bind values
+        $this->db->bind(':username', $data['username']);
+        $this->db->bind(':nic', $data['nic']);
+        $this->db->bind(':nic_image', $data['nic_image']);
+        $this->db->bind(':bank_code', $data['bank_code']);
+        $this->db->bind(':bank_name', $data['bank_name']);
+        $this->db->bind(':branch_code', $data['branch_code']);
+        $this->db->bind(':branch_name', $data['branch_name']);
+        $this->db->bind(':bank_pbook', $data['bank_pbook']);
 
-    public function login($usernameOrEmail, $password){
-        $row = $this->validateLogin($usernameOrEmail, $usernameOrEmail);
-
-        if($row == false) return false;
-
-        $hashedPassword = $row->password;
-        if(password_verify($password, $hashedPassword)){
-            return $row;
+        //Execute
+        if($this->db->execute()){
+            return true;
         }else{
             return false;
         }
     }
 
+   
 
 }
