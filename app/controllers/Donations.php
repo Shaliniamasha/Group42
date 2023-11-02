@@ -19,5 +19,13 @@ class Donations extends controller
         
         $this->view('V_index', $data);
 }
+
+
+public function FundraiserView($id)
+    {
+        $data = $this->displayDonations -> oneFundraiser($id); 
+        
+        $this->view('V_Fundraiser', $data);
+}
 }
 ?>

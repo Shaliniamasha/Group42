@@ -25,7 +25,7 @@
                         <?php echo $donation->story; ?>
                     </p>
                 </div>
-                <li><a href="<?php echo URLROOT ?>/fundraiser/<?php echo $donation->id ?>"> <button class="blue-button">Donate</button></a></li>
+                <li><a href="<?php echo URLROOT ?>/Donations/FundraiserView/<?php echo $donation->id ?>"> <button class="blue-button">Donate</button></a></li>
                        
                
             </div>

@@ -24,6 +24,18 @@ class M_donation
     }
 
 
+    //1don
+
+    public function oneFundraiser($id){
+        $row=$this->db->selectOne("doneeFundraiserIndv", "id", "$id", 1);
+        if ($this->db->rowCount() > 0) {
+            return $row;
+        } else {
+            return false;
+        }
+        
+    }
+
 
     public function startfundraiser($data){
         $this->db->query('INSERT INTO doneefundraiserindv (requiredAmount, storyImages, title, story, requirementEndDate, category) 
