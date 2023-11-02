@@ -1,6 +1,6 @@
 <?php
 
-require APPROOT . '/helpers/session_helper.php';
+require APPROOT . '/helpers/error_msg.php';
 class StartFund extends controller
 {
     private $fundraiserModel;
