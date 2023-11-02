@@ -10,7 +10,7 @@
     <div id="merchandise-container">
         <div id="merchandise-form">
             <h2>Add New Merchandise</h2>
-            <form id="merchandise-form">
+            <form id="merchandise-form" action="Merchandise/MerchForm" method="post" enctype="multipart/form-data">
 
 
                 <fieldset>
@@ -21,11 +21,11 @@
                     <input type="text" id="topic" name="p_title" required>
 
                     <label for="description">Description:</label>
-                    <textarea id="description" required></textarea>
+                    <textarea id="description" name="p_description" required></textarea>
 
                     <!-- Add an input field for uploading an image -->
                     <label for="image">Upload Image:</label>
-                    <input type="file" id="image" accept="image/*" required>
+                    <input type="file" id="image" name="p_image" accept="image/*" required>
 
 
 <!-- 
@@ -39,13 +39,22 @@
                 <fieldset>
 
                 <label for="stock">Stock Available:</label>
-                <input type="number" id="stock" required>
+                <input type="number" id="stock" name="p_stock" required>
 
                 <label for="colors">Colors (up to 4):</label>
-                <input type="text" id="colors" placeholder="Color 1, Color 2, Color 3, Color 4">
+                <input type="text" id="colors" name="p_colour1" placeholder="Colour 1">
+
+                <label for="colors">Colors (up to 4):</label>
+                <input type="text" id="colors" name="p_colour2" placeholder="Colour 2">
+
+                <label for="colors">Colors (up to 4):</label>
+                <input type="text" id="colors" name="p_colour3" placeholder="Colour 3">
+
+                <label for="colors">Colors (up to 4):</label>
+                <input type="text" id="colors" name="p_colour4" placeholder="Colour 4">
 
                 <label for="price">Price:</label>
-                <input type="number" id="price" required>
+                <input type="number" id="price" name="p_price" required>
 
                 <button class="form" type="submit">Add Merchandise</button>
 
