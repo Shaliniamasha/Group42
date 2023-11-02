@@ -34,7 +34,7 @@ class Individualusers extends controller
             'password' => trim($_POST['password']),
             'confirmpassword' => trim($_POST['confirmpassword']),
             'type' => 'Indv',
-            'status' =>'0'
+            'status' => 0
         ];
 
         //validate inputs

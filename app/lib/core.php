@@ -1,4 +1,8 @@
 <?php
+session_start();
+?>
+
+<?php
 class core
 {
     protected $currentController = 'Pages';

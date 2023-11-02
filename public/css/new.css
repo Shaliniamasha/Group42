@@ -23,11 +23,16 @@ body {
   font-size: 16px;
 }
 
-main {
-  margin-left: 100px;
-  margin-right: 100px;
-}
+/* main {
+  /* margin-left: 100px;
+  margin-right: 100px; 
+}*/
+ 
+.dash{
+  display: grid;
+  grid-template-columns: 150px, 200px;
 
+}
 
 .nav {
   position: static;

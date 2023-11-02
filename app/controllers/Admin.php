@@ -7,22 +7,22 @@ class Admin extends controller
 
     private $admin;
 
-    public function __construct()
+    // public function __construct()
+    // {
+    //     $this->admin = $this->model('M_admin');
+    // }
+
+   
+
+    public function home()
     {
-        $this->admin = $this->model('M_admin');
+        $this->view('admin_dashboard');
     }
 
-    public function index()
-    {  
-        if($_POST){
-            $this->signup();
-        } 
-        else {     
-        $this->view('V_adminSignup');
-        }
-        
+    public function indo()
+    {
+        $this->view('indone');
     }
-
     
     public function signup()
     {
