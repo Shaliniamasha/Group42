@@ -3,7 +3,7 @@
   	 <div class="footercontainer">
   	 	<div class="row">
            <div class="footer-col">
-  	 			<img src="../public/Assets/images/LogoWhite.png" alt="Logo">
+  	 			<img src="<?php echo URLROOT ?>/public/Assets/images/LogoWhite.png" alt="Logo">
   	 		</div>
   	 		<div class="footer-col">
   	 			<h4>Give4Good</h4>
