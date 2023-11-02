@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,20 +57,5 @@ session_start();
                 </ul>
             </div>
         </div>
-        <div class="home-image-container">
-            <div class="homepage-image left">
-                <div class="home-left-text-con">
-                    <h1>Give a Little, Change a Lot.</h1>
-                </div>
-                <div class="home-left-image-con">
-                    <img src="/give4good/public/Assets/images/home-left.png" alt="image" class="home-left-image">
-                </div>
-            </div>
-            <div class="homepage-image right">
-            <div class="donate_box">
-                        <h1 class="price">Donate</h1>
-                        <h5>Make a difference</h5>
-                    </div>
-            </div>
-        </div>
+       
     </header>
