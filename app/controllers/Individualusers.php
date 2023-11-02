@@ -36,7 +36,7 @@ class Individualusers extends controller
 
         //validate inputs
         if (empty($data['username']) || empty($data['email']) || empty($data['password']) || empty($data['confirmpassword'])) {
-            flash("register", "Please fill out all inputs");
+            flash("signup", "Please fill out all inputs");
             redirect(URLROOT . '/Individualusers');
         }
 
