@@ -25,12 +25,10 @@ class SuperIndividual extends controller
         $data = [
             'username' => trim($_POST['username']),
             'nic' => trim($_POST['nic']),
-            'nic_image' => trim($_POST['nic_image']),
             'bank_code' => trim($_POST['bank_code']),
             'bank_name' => trim($_POST['bank_name']),
             'branch_code' => trim($_POST['branch_code']),
             'branch_name' => trim($_POST['branch_name']),
-            'bank_pbook' => trim($_POST['bank_pbook']),
         ];
 
         //validate inputs
@@ -43,6 +41,26 @@ class SuperIndividual extends controller
             flash("signup", "Invalid Full Name");
              redirect(URLROOT . '/SuperIndividual');
         }
+
+        
+// // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+//      $targetDirectory = APPROOT . "/uploads/";
+     
+//     $targetFile = $targetDirectory . basename($_FILES["image"]["name"]);
+//     $uploadOk = 1;
+//     $imageFileType = strtolower(pathinfo($targetFile, PATHINFO_EXTENSION));
+
+//     // Check if the file is an actual image or a fake image
+//     $check = getimagesize($_FILES["image"]["tmp_name"]);
+//     if ($check !== false) {
+//         move_uploaded_file($_FILES["image"]["tmp_name"], $targetFile);
+//         echo "The file ". htmlspecialchars(basename($_FILES["image"]["name"])). " has been uploaded.";
+//     } else {
+//         echo "File is not an image.";
+//     }
+
+
+
 
         
 
@@ -61,6 +79,8 @@ class SuperIndividual extends controller
         } else {
             die("Something went wrong");
         }
+
+        
 
     }
     

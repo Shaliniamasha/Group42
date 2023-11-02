@@ -69,5 +69,20 @@ class Database {
         return $this->execute();
     }
 
+    public function selectOne($table, $field, $value, $limit = 1){
+        $this->query('SELECT * FROM $table WHERE $field = :value LIMIT $limit');
+        $this->bind(':value', $value);
+
+        $row = $this->single();
+
+        //Check row
+        if ($this->rowCount() > 0) {
+            return $row;
+        } else {
+            return false;
+        }
+    }
+
+
     
 }
