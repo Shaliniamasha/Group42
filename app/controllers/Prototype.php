@@ -6,7 +6,7 @@ class Prototype extends controller
     // {
     //     $this->prototypeModel = $this->model('M_model')
   
-    }
+    //}
 
 
     public function index(){
