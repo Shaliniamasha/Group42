@@ -23,6 +23,14 @@
                            <label for="email" class="login__label">Email</label>
                         </div>
                      </div>
+                     <div class="login__box">
+                     <i class="fa-regular fa-envelope"></i>
+
+                        <div class="login__box-input">
+                           <input type="text" required class="login__input" name="regNo" id="regNo">
+                           <label for="regno" class="login__label">Registration No of your Organisation</label>
+                        </div>
+                     </div>
 
                      <div class="login__box">
                         <i class="ri-lock-2-line login__icon"></i>

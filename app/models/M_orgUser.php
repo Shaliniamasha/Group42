@@ -22,14 +22,15 @@ class M_orgUser {
     }
 
     public function register($data){
-        $this->db->query('INSERT INTO orgusers (username, type, regNo, email, password) 
-        VALUES (:username, :type, :regNo, :email, :password)');
+        $this->db->query('INSERT INTO orgusers (username, regNo, email, password, type, status) 
+        VALUES (:username, :regNo, :email, :password, type, status)');
         //Bind values
         $this->db->bind(':username', $data['username']);
-        $this->db->bind(':type', $data['type']);
         $this->db->bind(':regNo', $data['regNo']);
         $this->db->bind(':email', $data['email']);
         $this->db->bind(':password', $data['password']);
+        $this->db->bind(':type', $data['type']);
+        $this->db->bind(':status', $data['status']);
 
         //Execute
         if($this->db->execute()){

@@ -22,12 +22,15 @@ class M_individualUser {
     }
 
     public function register($data){
-        $this->db->query('INSERT INTO individualdonor (username, email, password) 
-        VALUES (:username, :email, :password)');
+        $this->db->query('INSERT INTO individualdonor (username, email, password, type, status) 
+        VALUES (:username, :email, :password, :type, :status)');
         //Bind values
         $this->db->bind(':username', $data['username']);
         $this->db->bind(':email', $data['email']);
         $this->db->bind(':password', $data['password']);
+        $this->db->bind(':type', $data['type']);
+        $this->db->bind(':status', $data['status']);
+
 
         //Execute
         if($this->db->execute()){
