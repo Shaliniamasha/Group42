@@ -6,14 +6,14 @@ class Prototype extends controller
     {
         $this->prototypeModel = $this->model('M_model');
 
-    
+  
     }
 
     public function index(){
 
     }
 
-    public function home(){
+    public function index(){
         $this->view('admin-home');
 }
 }
