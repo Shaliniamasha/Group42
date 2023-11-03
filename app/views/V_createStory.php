@@ -10,16 +10,16 @@
 
                     <legend>Let us help you spread the word!</legend>
 
-                    <label for="target">Title of your Story: </label>
+                    <label for="target">Title of your Story<span class="required">*</span>: </label>
                     <input required id="target" name="title"></input>
 
-                    <label for="image">Upload an Image related to the story (if any): </label>
+                    <label for="image">Upload an Image related to the story (if any)<span class="required">*</span>: </label>
                     <input class="image" type="file" id="image" name="image">
 
-                    <label for="descpription">Enter your story for viewers:</label>
+                    <label for="descpription">Enter your story for viewers<span class="required">*</span>:</label>
                     <textarea id="descpription" name="description"></textarea>
 
-                    <label for="contact">Contact: </label>
+                    <label for="contact">Contact<span class="required">*</span>: </label>
                     <input class="contact" type="text" name="contact">
 
                     

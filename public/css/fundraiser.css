@@ -127,3 +127,8 @@ label.light {
     margin: 10px;
     border-radius: 5px;
 }
+
+.required {
+    color: red;
+    margin-left: 5px; /* Add some space between the label text and the asterisk */
+}

@@ -13,7 +13,7 @@
                <!-- <input type="hidden" name="type" value="test"> -->
                <div class="login__box-input">
                   <input type="text" required class="login__input" name="username/email" placeholder="">
-                  <label for="" class="login__label">Username or email </label>
+                  <label for="" class="login__label">Username or email<span class="required">*</span> </label>
                </div>
             </div>
 
@@ -22,7 +22,7 @@
 
                <div class="login__box-input">
                   <input type="password" required class="login__input" name="password" id="login-pass" placeholder=" ">
-                  <label for="" class="login__label">Password</label>
+                  <label for="" class="login__label">Password<span class="required">*</span></label>
                   <i class="ri-eye-off-line login__eye" id="login-eye"></i>
                </div>
             </div>
