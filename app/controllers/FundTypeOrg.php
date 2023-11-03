@@ -14,6 +14,13 @@ class FundTypeOrg extends controller
     // }
 
     public function index(){
+        if ($_SESSION['userType'] == 0){
+            $this->view('V_frType');
+        } else if ($_SESSION['userType'] == 1){
+            // Add code specific to 'Org' user type
+            $this->view('V_frTypeOrg'); // For example, displaying a view for organizations
+            // Other actions specific to organizations
+        }
         $this->view('V_frTypeOrg');
     }
 

@@ -33,7 +33,7 @@ class Individualusers extends controller
             'email' => trim($_POST['email']),
             'password' => trim($_POST['password']),
             'confirmpassword' => trim($_POST['confirmpassword']),
-            'type' => 'Indv',
+            'type' => 0,
             'status' => 0
         ];
 

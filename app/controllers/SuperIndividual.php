@@ -1,4 +1,6 @@
 <?php
+require APPROOT . '/helpers/session_helper.php';
+require APPROOT . '/helpers/error_msg.php';
 class SuperIndividual extends controller
 {
     private $superIndividualModel;
@@ -75,7 +77,7 @@ class SuperIndividual extends controller
        
 
         if ($this->superIndividualModel ->register($data)) {
-            redirect(URLROOT . '/StartFund');
+            redirect(URLROOT . '/FundType');
         } else {
             die("Something went wrong");
         }
