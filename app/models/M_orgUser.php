@@ -22,8 +22,8 @@ class M_orgUser {
     }
 
     public function register($data){
-        $this->db->query('INSERT INTO orgusers (username, regNo, email, password, type, status) 
-        VALUES (:username, :regNo, :email, :password, type, status)');
+        $this->db->query('INSERT INTO orgusers (username, regNo, email, password, status, type) 
+        VALUES (:username, :regNo, :email, :password, :status, :type)');
         //Bind values
         $this->db->bind(':username', $data['username']);
         $this->db->bind(':regNo', $data['regNo']);
