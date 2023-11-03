@@ -19,11 +19,95 @@ class Admin extends controller
         $this->view('admin_dashboard');
     }
 
-    public function indo()
-    {
-        $this->view('indone');
+
+ /*   public function index()
+    {  
+        if($_POST){
+            $this->signup();
+        } 
+        else {     
+        $this->view('V_adminSignup');
+        }
     }
+   */   
     
+    public function admin_home(){
+        $this->view('V_adminHome');
+    }
+
+    public function adminaddadmin(){
+        $this->view('AdminaddAdmin');
+    }
+
+    public function admindash(){
+        $this->view('Admindashboard');
+    }
+
+    
+    public function admindonations(){
+        $this->view('AdminDonations');
+    }
+
+    public function admindoneeindv_act(){
+        $this->view('AdmindoneeIndividuals-active');
+    }
+
+    public function admindonee_deact(){
+        $this->view('AdmindoneeIndividuals-deactivated');
+    }
+
+    public function admindonee_pend(){
+        $this->view('AdmindoneeIndividuals-pending');
+    }
+
+    public function admindoneeindv(){
+        $this->view('AdmindoneeIndividuals');
+    }
+
+    public function admindoneeorg_act(){
+        $this->view('AdmindoneeOrganizations-active');
+    }
+
+    public function admindoneeorg_deact(){
+        $this->view('dmindoneeOrganizations-deactived');
+    }
+
+    public function admindoneeorg_pend(){
+        $this->view('dmindoneeOrganizations-pending');
+    }
+
+    public function admindoneeorg(){
+        $this->view('AdmindoneeOrganizations');
+    }
+
+    public function admindonorindv(){
+        $this->view('AdmindonorIndividuals');
+    }
+
+    public function admindonororg(){
+        $this->view('AdmindonorOrganizations');
+    }
+
+    public function adminfund_act(){
+        $this->view('AdminFundraisers-active');
+    }
+
+    public function adminfund_deact(){
+        $this->view('AdminFundraisers-deactivated');
+    }
+
+    public function adminfund_pend(){
+        $this->view('AdminFundraisers-pending');
+    }
+
+    public function adminstory_act(){
+        $this->view('AdminStories-active');
+    }
+
+    public function adminstory_pend(){
+        $this->view('AdminStories-pending');
+    }
+
     public function signup()
     {
         $_POST = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
@@ -60,7 +144,6 @@ class Admin extends controller
             redirect(URLROOT . '/Admin');
         }
 
-        //User with the same email or password already exists
         if ($this->admin->findUserByEmailOrUsername($data['email'], $data['username'])) {
             flash("register", "Username or email already taken");
             redirect(URLROOT . '/Admin');
@@ -74,9 +157,7 @@ class Admin extends controller
             die("Something went wrong");
         }
 
-    }
-
-    
+    }    
 
 }
 
