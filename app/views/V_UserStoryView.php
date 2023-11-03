@@ -17,19 +17,19 @@
                         
                         <div class="small-preview-container d-flex align-items-center position-absolute">
                             <a href="#" class="preview-btn position-relative">
-                                <img src="https://images.pexels.com/photos/271168/pexels-photo-271168.jpeg?auto=compress&cs=tinysrgb&w=600">
+                                <img src="https://donatelife.net/wp-content/uploads/icons-donate-kidney.png" />
                             </a>
                             <a href="#" class="preview-btn position-relative">
-                                <img src="https://images.pexels.com/photos/6347738/pexels-photo-6347738.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                                <img src="https://static5.depositphotos.com/1005537/405/i/600/depositphotos_4051655-stock-photo-man-grabing-a-help-sign.jpg" />
                             </a>
                             <a href="#" class="preview-btn position-relative">
-                                <img src="https://images.pexels.com/photos/6129689/pexels-photo-6129689.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                                <img src="https://donatelife.net/wp-content/uploads/icons-donate-kidney.png.jpg" />
                             </a>
                         </div>
                     </section>
     <section>
         <p>
-        <?php echo $data->story; ?>
+        <?php echo $data->description; ?>
             <!-- " I wanted to take a moment to shed some light on an important issue that needs our attention: the living conditions in slum areas. Many individuals and families in these communities face daily challenges, from inadequate housing to limited access to basic amenities.
 
 But here's the thing: we have the power to make a difference! ✨ By coming together as a community, we can support and uplift those living in slum areas. Here are a few ways you can get involved:
@@ -50,8 +50,9 @@ Raise awareness: Use your platform to spread awareness about the challenges face
                         <img src="p.png" class="rounded-circle" />
                         
                     </div>
+                    <h3 class="title">Contact through</h3>
                     <h1 class="user-greeting">
-                    <?php echo $data->requiredAmount; ?>
+                    <?php echo $data->contact; ?>
                     </h1>
                     <div class="user-choice">
                         <h5 class="title">My Choices</h5>
@@ -75,12 +76,12 @@ Raise awareness: Use your platform to spread awareness about the challenges face
                         </ul>
                     </div>
                     <div class="user-proposal">
-                        <h5 class="title">Donations</h5>
+                        <h5 class="title">Views</h5>
                         <ul class="proposal-list">
-                            <li class="nav-item d-flex align-items-center justify-content-between selected">
+                            <!-- <li class="nav-item d-flex align-items-center justify-content-between selected">
                                 
                                 45 Donations
-                            </li>
+                            </li> -->
                             <li class="nav-item d-flex align-items-center justify-content-between">
                                 
                                118 Views
@@ -96,18 +97,18 @@ Raise awareness: Use your platform to spread awareness about the challenges face
             <section id="product-suggestion" class="product-suggestion w-100">
                 <div class="container-full d-flex justify-content-between mx-auto w-100">
                     <div class="section-title h-100">
-                        <h1>Other Donations</h1>
+                        <h1>Other Stories</h1>
                         
                     </div>
     
                     <div class="product-suggestion-showcase d-flex align-items-center">
                         <div class="suggestion-card h-100 bg-light d-flex column border-light position-relative">
-                            <img src="https://images.pexels.com/photos/6129689/pexels-photo-6129689.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                            <h2>Medical Assistance</h2>
-                            <h5>Saddie</h5>
-                            <h3 class="price">Rs. 2000 000</h3>
+                            <img src="https://donatelife.net/wp-content/uploads/icons-donate-kidney.png" />
+                            <h2>Kidney needed</h2>
+                            <!-- <h5>Stockholm 2020</h5>
+                            <h3 class="price">$12</h3> -->
                             <button class="add-cart-btn rounded-pill d-flex align-items-center justify-content-between">
-                                Donate<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
+                                View Story<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
                                     <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
                                         <path d="M0 0h24v24H0z" fill="none" />
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
@@ -116,12 +117,12 @@ Raise awareness: Use your platform to spread awareness about the challenges face
                             </button>
                         </div>
                         <div class="suggestion-card h-100 bg-light d-flex column border-light position-relative">
-                            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                            <h2>Charity Campaign</h2>
-                            <h5>Dialog</h5>
-                            <h3 class="price">Rs. 240 000 000</h3>
+                            <img src="https://t3.ftcdn.net/jpg/04/70/02/36/360_F_470023679_xgFhfOLjUweKmLzT8ODiLxFDAw1ag3kV.jpg" />
+                            <h2>A+ Blood needed</h2>
+                            <!-- <h5>Foto</h5>
+                            <h3 class="price">$24</h3> -->
                             <button class="add-cart-btn rounded-pill d-flex align-items-center justify-content-between">
-                                Donate<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
+                                View Story<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
                                     <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
                                         <path d="M0 0h24v24H0z" fill="none" />
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
@@ -130,12 +131,12 @@ Raise awareness: Use your platform to spread awareness about the challenges face
                             </button>
                         </div>
                         <div class="suggestion-card h-100 bg-light d-flex column border-light position-relative">
-                            <img src="https://images.pexels.com/photos/6347738/pexels-photo-6347738.jpeg?auto=compress&cs=tinysrgb&w=600"" />
-                            <h2>Give a hand</h2>
-                            <h5>Sippra</h5>
-                            <h3 class="price">Rs.223 000</h3>
+                            <img src="https://static5.depositphotos.com/1005537/405/i/600/depositphotos_4051655-stock-photo-man-grabing-a-help-sign.jpg" />
+                            <h2>O- Blood needed</h2>
+                            <!-- <h5>Sippra</h5>
+                            <h3 class="price">$12</h3> -->
                             <button class="add-cart-btn rounded-pill d-flex align-items-center justify-content-between">
-                                Donate<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
+                                View Story<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
                                     <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
                                         <path d="M0 0h24v24H0z" fill="none" />
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />

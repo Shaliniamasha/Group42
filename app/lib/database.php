@@ -70,7 +70,7 @@ class Database {
     }
 
     public function selectOne($table, $field, $value, $limit = 1){
-        $this->query('SELECT * FROM $table WHERE $field = :value LIMIT $limit');
+        $this->query("SELECT * FROM $table WHERE $field = :value LIMIT $limit");
         $this->bind(':value', $value);
 
         $row = $this->single();

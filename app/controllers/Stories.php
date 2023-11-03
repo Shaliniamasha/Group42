@@ -25,6 +25,13 @@ class Stories extends controller
         $this->view('V_stories', $data);
     }
 
+    public function StoryView($id)
+    {
+        $data = $this->storyModel->oneStory($id);
+
+        $this->view('V_StoryView', $data);
+    }
+
     public function create()
     {
         if ($_POST) {
@@ -78,6 +85,9 @@ class Stories extends controller
         }
     }
 
+    public function UserStory(){
+        $this->view('V_UserStoryView');
+    }
 
 }
 ?>

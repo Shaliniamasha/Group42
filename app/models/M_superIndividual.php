@@ -7,7 +7,7 @@ class M_superIndividual {
     }
 
     public function findUserByEmailOrUsername($nic, $username){
-        $this->db->query('SELECT * FROM indvdonee WHERE username = :username OR nic = :nic');
+        $this->db->query('SELECT * FROM indv_donee WHERE username = :username OR nic = :nic');
         $this->db->bind(':username', $username);
         $this->db->bind(':nic', $nic);
 

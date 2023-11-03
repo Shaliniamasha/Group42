@@ -30,7 +30,9 @@
                         <?php echo $story->description; ?>
                     </p>
                 </div>
-                <button class="blue-button">View</button>
+
+                <li><a href="<?php echo URLROOT ?>/Stories/Storyview/<?php echo $story->id ?>"> <button class="blue-button">View</button></a></li>
+            
             </div>
             <?php
         }

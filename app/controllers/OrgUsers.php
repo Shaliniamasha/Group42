@@ -1,6 +1,7 @@
 <?php
 
 require APPROOT . '/helpers/session_helper.php';
+require APPROOT . '/helpers/error_msg.php';
 class OrgUsers extends controller
 {
 
@@ -29,35 +30,36 @@ class OrgUsers extends controller
 
         $data = [
             'username' => trim($_POST['username']),
-            'type' => trim($_POST['type']),
             'regNo'=> trim($_POST['regNo']),
             'email' => trim($_POST['email']),
             'password' => trim($_POST['password']),
-            'confirmpassword' => trim($_POST['confirmpassword'])
+            'confirmpassword' => trim($_POST['confirmpassword']),
+            'type' => 1,
+            'status' =>0
         ];
 
         //validate inputs
-        if (empty($data['username']) || empty($data['type']) || empty($data['regNo'])|| empty($data['email']) || empty($data['password']) || empty($data['confirmpassword'])) {
-            flash("register", "Please fill out all inputs");
+        if (empty($data['username']) || empty($data['regNo'])|| empty($data['email']) || empty($data['password']) || empty($data['confirmpassword'])) {
+            flash("signup", "Please fill out all inputs");
             redirect(URLROOT . '/OrgUsers');
         }
 
         if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
-            flash("register", "Invalid email");
+            flash("signup", "Invalid email");
             redirect(URLROOT . '/OrgUsers');
         }
 
         if (strlen($data['password']) < 6) {
-            flash("register", "Invalid password");
+            flash("signup", "Invalid password");
             redirect(URLROOT . '/OrgUsers');
         } else if ($data['password'] !== $data['confirmpassword']) {
-            flash("register", "Passwords don't match");
+            flash("signup", "Passwords don't match");
             redirect(URLROOT . '/OrgUsers');
         }
 
         //User with the same email or username already exists
         if ($this->orgUser->findUserByEmailOrUsername($data['email'], $data['username'])) {
-            flash("register", "Username or email already taken");
+            flash("signup", "Username or email already taken");
             redirect(URLROOT . '/OrgUsers');
         }
 

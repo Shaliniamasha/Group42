@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,20 +35,24 @@ session_start();
             </div>
             <div class="navbar2">
                 <ul class="nav_links">
-                    <li><a href="#"><button class="white-button">Dashboard</button></a></li>
+                <?php if (isset($_SESSION['userId'])) {?>
+                    <li><a href="<?php echo URLROOT ?>/login/logout"><button class="white-button">Logout</button></a></li><?php } else {} ?>
                 </ul>
                 <form action="" class="search-bar">
                     <input type="text" placeholder="Search Give4Good" name="search">
                     <button type="submit"><img src="<?php echo URLROOT ?>/public/Assets/icons/search.svg"></button>
                 </form>
-                <ul class="nav_links">
-                    <?php if (isset($_SESSION['userId'])) {
-                        echo "Hi, " . explode(" ", $_SESSION["userName"])[0] . "!";
+                <ul class="nav_links"><div style="display: inline-block ;">
+                
+                    <?php if (isset($_SESSION['userId'])) {?>
+                        <li><a href="<?php echo URLROOT ?>/profile"><i class="fa-solid fa-user"></i></li>
+                        <li><?php
+                        echo "Hi, " . explode(" ", $_SESSION["userName"])[0] . "!";?></a><?php
                     } else { ?>
                         <script>
                             var myVariable = <?php echo json_encode($_SESSION['userId']); ?>;
                             console.log(myVariable);
-                        </script>
+                        </script></li>
                         <li><a href="<?php echo URLROOT ?>/signup"><button class="white-button">Sign Up</button></a></li>
                         <li><a href="<?php echo URLROOT ?>/login"><button class="white-button">Login</button></a></li>
                         <?php
@@ -61,20 +61,5 @@ session_start();
                 </ul>
             </div>
         </div>
-        <div class="home-image-container">
-            <div class="homepage-image left">
-                <div class="home-left-text-con">
-                    <h1>Give a Little, Change a Lot.</h1>
-                </div>
-                <div class="home-left-image-con">
-                    <img src="/give4good/public/Assets/images/home-left.png" alt="image" class="home-left-image">
-                </div>
-            </div>
-            <div class="homepage-image right">
-            <div class="donate_box">
-                        <h1 class="price">Donate</h1>
-                        <h5>Make a difference</h5>
-                    </div>
-            </div>
-        </div>
+       
     </header>

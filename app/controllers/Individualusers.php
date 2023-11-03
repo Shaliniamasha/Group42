@@ -1,6 +1,7 @@
 <?php
 
 require APPROOT . '/helpers/session_helper.php';
+require APPROOT . '/helpers/error_msg.php';
 class Individualusers extends controller
 {
 
@@ -32,8 +33,8 @@ class Individualusers extends controller
             'email' => trim($_POST['email']),
             'password' => trim($_POST['password']),
             'confirmpassword' => trim($_POST['confirmpassword']),
-            'type' => ('Indv'),
-            'status' =>('Org')
+            'type' => 0,
+            'status' => 0
         ];
 
         //validate inputs

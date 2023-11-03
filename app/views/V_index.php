@@ -1,5 +1,24 @@
 <?php require APPROOT . '/views/includes/header.php' ?>
+
 <main>
+    <div class="home-image-container">
+            <div class="homepage-image left">
+                <div class="home-left-text-con">
+                    <h1>Give a Little, Change a Lot.</h1>
+                </div>
+                <div class="home-left-image-con">
+                <div class="donate_box">
+                        <h1 class="price">Donate >> </h1>
+                        <h5>Make a difference</h5>
+                    </div>
+            </div>
+                </div>
+        
+            <div class="homepage-image right">
+    
+            </div>
+        </div>
+   
     <div class="container">
     <h1><b>Featured Topics...</b></h1>
     <div class="grid-donations">
@@ -25,7 +44,7 @@
                         <?php echo $donation->story; ?>
                     </p>
                 </div>
-                <li><a href="<?php echo URLROOT ?>/fundraiser/<?php echo $donation->id ?>"> <button class="blue-button">Donate</button></a></li>
+                <li><a href="<?php echo URLROOT ?>/Donations/FundraiserView/<?php echo $donation->id ?>"> <button class="blue-button">Donate</button></a></li>
                        
                
             </div>
@@ -36,5 +55,6 @@
 
     </div>
     <div>
+    </div>
 </main>
 <?php require APPROOT . '/views/includes/footer.php' ?>

@@ -1,6 +1,5 @@
 <?php
-
-class Donations extends controller
+class Index extends controller
 {
     private $displayDonations;
     private $donations;
@@ -13,19 +12,11 @@ class Donations extends controller
 
     
 
-    public function home()
+    public function index()
     {
         $data = $this->displayDonations -> getDonations(); 
         
         $this->view('V_index', $data);
-}
-
-
-public function FundraiserView($id)
-    {
-        $data = $this->displayDonations -> oneFundraiser($id); 
-        
-        $this->view('V_Fundraiser', $data);
 }
 }
 ?>

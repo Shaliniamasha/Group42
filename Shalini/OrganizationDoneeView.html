@@ -161,48 +161,15 @@
                           
                           <div class="tab-pane fade" id="raised-funds">
                             <div class="card-body pb-2">
+                                <h6 class="mb-4">Raised Funds</h6>
                                 <div class="form-group">
-                                    <label class="form-label">Funds Raised - Money</label>
-                                    <input type="number" id="money-donation-input" class="form-control"
-                                        placeholder="Enter the received money donation amount">
-                                    <button onclick="addMoneyDonation()" class="btn btn-primary">Add Donation</button>
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Received Donations - Money</label>
-                                    <div id="received-money-donations">
-                                        <!-- Populated dynamically using JavaScript -->
+                                    <!-- Add fundraising requests here -->
+                                    <div id="raised-funds-list">
+                                        <!-- List of fundraising requests will be populated dynamically -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body pb-2">
-                                <label class="form-label">Funds Raised - Materials</label>
-                                <input type="text" id="material-donation-input" class="form-control"
-                                    placeholder="Enter the received material donation details">
-                                <button onclick="addMaterialDonation()" class="btn btn-primary">Add Donation</button>
-                                <div class="form-group">
-                                    <label class="form-label">Received Donations - Materials</label>
-                                    <div id="received-material-donations">
-                                        <!-- Populated dynamically using JavaScript -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body pb-2">
-                                <label class="form-label">Sell Merchandise Money Fund Raise</label>
-                                <input type="text" id="merchandise-heading" class="form-control" placeholder="Fundraiser Heading">
-                                <textarea id="merchandise-story" class="form-control" rows="5"
-                                    placeholder="Fundraiser Story"></textarea>
-                                <input type="number" id="merchandise-amount" class="form-control"
-                                    placeholder="Amount Requested for Fundraiser">
-                                <input type="text" id="merchandise-photo" class="form-control" placeholder="Photo URL">
-                                <button onclick="addMerchandiseFundraise()" class="btn btn-primary">Add Fundraiser</button>
-                                <div class="form-group">
-                                    <label class="form-label">Received Funds - Merchandise</label>
-                                    <div id="received-merchandise-funds">
-                                        <!-- Populated dynamically using JavaScript -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                       
+                        </div>                   
                     </div>
                 </div>
             </div>
@@ -282,32 +249,55 @@ class FundraisingRequest {
             input.value = "";
         }
 
-        function addMerchandiseFundraise() {
-            var heading = document.getElementById("merchandise-heading").value;
-            var story = document.getElementById("merchandise-story").value;
-            var amount = document.getElementById("merchandise-amount").value;
-            var photoURL = document.getElementById("merchandise-photo").value;
+        function addRaisedFund() {
+            var heading = document.getElementById("raised-heading-input").value;
+            var amount = document.getElementById("raised-amount-input").value;
+            var requiredDate = document.getElementById("raised-date-input").value;
 
-            var request = new FundraisingRequest(heading, story, amount, 0, photoURL);
+            var request = new FundraisingRequest(heading, "", amount, 0, requiredDate, "");
             fundraisingRequests.push(request);
-            updateMerchandiseFundraiseTab();
+            updateRaisedFundsList();
         }
 
-        function updateMerchandiseFundraiseTab() {
-            var receivedFunds = document.getElementById("received-merchandise-funds");
-            receivedFunds.innerHTML = ""; // Clear existing content
+        function removeRaisedFund(index) {
+            fundraisingRequests.splice(index, 1);
+            updateRaisedFundsList();
+        }
 
-            if (fundraisingRequests.length === 0) {
-                receivedFunds.innerHTML = "No merchandise fundraisers requested.";
-            } else {
-                for (var i = 0; i < fundraisingRequests.length; i++) {
-                    var request = fundraisingRequests[i];
-                    var requestBox = document.createElement("div");
-                    requestBox.className = "request-box";
-                    requestBox.innerHTML = "<h4>" + request.heading + "</h4><p>" + request.story + "</p><p>Amount Requested: $" + request.amountRequested + "</p><p>Amount Received: $" + request.amountReceived + "</p><img src='" + request.photoURL + "' alt='Fundraiser Photo'>";
-                    receivedFunds.appendChild(requestBox);
-                }
+        function updateRaisedFundsList() {
+            var raisedFundsList = document.getElementById("raised-funds-list");
+            raisedFundsList.innerHTML = "";
+
+            for (var i = 0; i < fundraisingRequests.length; i++) {
+                var request = fundraisingRequests[i];
+                var requestBox = document.createElement("div");
+                requestBox.className = "request-box";
+                requestBox.innerHTML = "<h4>" + request.heading + "</h4>" +
+                    "<p>Amount Needed: $" + request.amountRequested + "</p>" +
+                    "<p>Required Date: " + request.requiredDate + "</p>" +
+                    "<button onclick='showFundDetails(" + i + ")' class='btn btn-primary'>View Fundraiser</button>" +
+                    "<button onclick='removeRaisedFund(" + i + ")' class='btn btn-danger'>Remove</button>";
+
+                raisedFundsList.appendChild(requestBox);
             }
+        }
+
+        function showFundDetails(index) {
+            var request = fundraisingRequests[index];
+            var detailsBox = document.createElement("div");
+            detailsBox.className = "fund-details";
+            detailsBox.innerHTML = "<h4>" + request.heading + " Details</h4>" +
+                "<p>Amount Needed: $" + request.amountRequested + "</p>" +
+                "<p>Required Date: " + request.requiredDate + "</p>" +
+                "<p>Amount Raised: $" + request.amountReceived + "</p>" +
+                "<button onclick='donateToFund(" + index + ")' class='btn btn-primary'>Donate Now</button>";
+
+            raisedFundsList.appendChild(detailsBox);
+        }
+
+        function donateToFund(index) {
+            // Implement the functionality for making a donation to the selected fund.
+            // You can show a modal or a form for donation, and handle the donation process.
         }
 </script>
 
