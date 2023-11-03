@@ -85,6 +85,9 @@ class Stories extends controller
         }
     }
 
+    public function UserStory(){
+        $this->view('V_UserStoryView');
+    }
 
 }
 ?>

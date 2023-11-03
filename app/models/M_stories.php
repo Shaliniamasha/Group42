@@ -25,7 +25,32 @@ class M_stories
         }
     }
 
+    public function StoryTitles($id) {
+        $this->db->query("SELECT title FROM stories WHERE id = :id");
+        $this->db->bind(':id', $id);
+        $rows = $this->db->resultSet();
+    
+        if ($rows) {
+            $titles = array_column($rows, 'title');
+            return $titles;
+        } else {
+            return false;
+        }
+    }
+    
+    
+
     public function oneStory($id){
+        $row=$this->db->selectOne("stories", "id", "$id", 1);
+        if ($this->db->rowCount() > 0) {
+            return $row;
+        } else {
+            return false;
+        }
+        
+    }
+
+    public function AStory($id){
         $row=$this->db->selectOne("stories", "id", "$id", 1);
         if ($this->db->rowCount() > 0) {
             return $row;
@@ -66,4 +91,5 @@ class M_stories
             return false;
         }
     }
+    
 }

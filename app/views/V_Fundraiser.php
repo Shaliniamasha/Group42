@@ -17,13 +17,13 @@
                         
                         <div class="small-preview-container d-flex align-items-center position-absolute">
                             <a href="#" class="preview-btn position-relative">
-                                <img src="https://i.ibb.co/KhpJmHt/preview1.jpg" />
+                                <img src="https://images.pexels.com/photos/271168/pexels-photo-271168.jpeg?auto=compress&cs=tinysrgb&w=600">
                             </a>
                             <a href="#" class="preview-btn position-relative">
-                                <img src="https://i.ibb.co/fd5wdSw/preview2.jpg" />
+                                <img src="https://images.pexels.com/photos/6347738/pexels-photo-6347738.jpeg?auto=compress&cs=tinysrgb&w=600" />
                             </a>
                             <a href="#" class="preview-btn position-relative">
-                                <img src="https://i.ibb.co/G5XvqBb/preview3.jpg" />
+                                <img src="https://images.pexels.com/photos/6129689/pexels-photo-6129689.jpeg?auto=compress&cs=tinysrgb&w=600" />
                             </a>
                         </div>
                     </section>
@@ -102,12 +102,12 @@ Raise awareness: Use your platform to spread awareness about the challenges face
     
                     <div class="product-suggestion-showcase d-flex align-items-center">
                         <div class="suggestion-card h-100 bg-light d-flex column border-light position-relative">
-                            <img src="https://i.ibb.co/Db3smwL/similar1.jpg" />
-                            <h2>Serving Bowl</h2>
-                            <h5>Stockholm 2020</h5>
-                            <h3 class="price">$12</h3>
+                            <img src="https://images.pexels.com/photos/6129689/pexels-photo-6129689.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                            <h2>Medical Assistance</h2>
+                            <h5>Saddie</h5>
+                            <h3 class="price">Rs. 2000 000</h3>
                             <button class="add-cart-btn rounded-pill d-flex align-items-center justify-content-between">
-                                Add to cart<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
+                                Donate<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
                                     <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
                                         <path d="M0 0h24v24H0z" fill="none" />
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
@@ -116,12 +116,12 @@ Raise awareness: Use your platform to spread awareness about the challenges face
                             </button>
                         </div>
                         <div class="suggestion-card h-100 bg-light d-flex column border-light position-relative">
-                            <img src="https://i.ibb.co/wSQVJyb/similar2.jpg" />
-                            <h2>Pendant Lamp</h2>
-                            <h5>Foto</h5>
-                            <h3 class="price">$24</h3>
+                            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=600" />
+                            <h2>Charity Campaign</h2>
+                            <h5>Dialog</h5>
+                            <h3 class="price">Rs. 240 000 000</h3>
                             <button class="add-cart-btn rounded-pill d-flex align-items-center justify-content-between">
-                                Add to cart<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
+                                Donate<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
                                     <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
                                         <path d="M0 0h24v24H0z" fill="none" />
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
@@ -130,12 +130,12 @@ Raise awareness: Use your platform to spread awareness about the challenges face
                             </button>
                         </div>
                         <div class="suggestion-card h-100 bg-light d-flex column border-light position-relative">
-                            <img src="https://i.ibb.co/YhsP9FJ/similar3.jpg" />
-                            <h2>Wall Clock</h2>
+                            <img src="https://images.pexels.com/photos/6347738/pexels-photo-6347738.jpeg?auto=compress&cs=tinysrgb&w=600"" />
+                            <h2>Give a hand</h2>
                             <h5>Sippra</h5>
-                            <h3 class="price">$12</h3>
+                            <h3 class="price">Rs.223 000</h3>
                             <button class="add-cart-btn rounded-pill d-flex align-items-center justify-content-between">
-                                Add to cart<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
+                                Donate<span class="features-btn rounded-circle d-flex align-items-center justify-content-center">
                                     <svg class="rounded-circle" xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 24 24" width="16">
                                         <path d="M0 0h24v24H0z" fill="none" />
                                         <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />

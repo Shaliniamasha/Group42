@@ -34,8 +34,8 @@ class OrgUsers extends controller
             'email' => trim($_POST['email']),
             'password' => trim($_POST['password']),
             'confirmpassword' => trim($_POST['confirmpassword']),
-            'type' => ('Org'),
-            'status' =>('0')
+            'type' => 1,
+            'status' =>0
         ];
 
         //validate inputs
