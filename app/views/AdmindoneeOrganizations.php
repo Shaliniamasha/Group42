@@ -42,6 +42,7 @@ padding-left: 35px;
 
 }
 .LOGO-img{
+  display: block;
   width: 150px;
 
 }
@@ -124,7 +125,7 @@ padding-left: 35px;
     width: 125px;
   }
   .LOGO-img{
-    display: none;
+    display: block;
   }
   .nav-links li a p{
     display: none;

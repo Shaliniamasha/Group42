@@ -12,7 +12,7 @@ class Admin extends controller
         $this->admin = $this->model('M_admin');
     }
 
-    public function index()
+ /*   public function index()
     {  
         if($_POST){
             $this->signup();
@@ -20,7 +20,8 @@ class Admin extends controller
         else {     
         $this->view('V_adminSignup');
         }
-    }  
+    }
+   */   
     
     public function admin_home(){
         $this->view('V_adminHome');
@@ -134,7 +135,6 @@ class Admin extends controller
             redirect(URLROOT . '/Admin');
         }
 
-        //User with the same email or password already exists
         if ($this->admin->findUserByEmailOrUsername($data['email'], $data['username'])) {
             flash("register", "Username or email already taken");
             redirect(URLROOT . '/Admin');
