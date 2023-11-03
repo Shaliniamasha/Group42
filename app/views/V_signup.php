@@ -18,42 +18,36 @@
     background-color:rgb(179, 247, 179);
 }
 
-.left {
+.left_box {
+    margin-top: 80px;
+    margin-bottom: 80px;
     border-right: 1px solid #ddd;
 }
 
-.right {
+.right_box {
+    margin-top: 80px;
+    margin-bottom: 80px;
     border-left: 1px solid #ddd;
 }</style></head>
 <div class="split-container">
-        <div class="textbox left">
+        <div class="textbox left_box">
             <img src="user_avatar.png" alt="Image 1">
-            <div> <button class="my-button"><a href="<?php echo URLROOT ?>/Individualusers"> Sign up as an Individual</a></button>
+            <div> <button class="my-button"><a href="<?php echo URLROOT ?>/Individualusers"><h1> Sign up as an Individual</h1></a></button>
             </div>
-            <p>A system information for an approval workflow and assets management automated system within a company ref
-                ers to a comprehensive database and infrastructure that tracks, organizes, and facilitates the approval 
-                process and management of company assets. This system provides a centralized platform for employees to 
-                submit requests, such as purchase requisitions or access permissions, and ensures that these requests 
-                follow a predefined workflow, with appropriate authorizations and reviews at each stage. Simultaneously,
-                 it maintains a detailed inventory of the company's assets, ranging from physical equipment to digital 
-                 resources, helping to streamline asset allocation, maintenance, and tracking. This integration of approval
-                  workflows and asset management not only enhances operational efficiency but also promotes transparency 
-                and accountability, making it an invaluable tool for modern organizations seeking to optimize resource allocation and regulatory compliance.</p>
+            <h4>Will be able to publish stories</h4>
+            <h4>Will be able to Raise monetary Funds</h4>
+            <h4>Will be able to Raise Material Funds</h4>
         </div>
-        <div class="textbox right">
+        <div class="textbox right_box">
             <img src="user_avatar.png" alt="Image 2">
-            <div> <button class="my-button"><a href="<?php echo URLROOT ?>/OrgUsers">Sign Up as an Organisation</a></button>
+            <div> <button class="my-button"><a href="<?php echo URLROOT ?>/OrgUsers"><h1>Sign Up as an Organisation</h1></a></button>
             </div>
-            <p> A system information for an approval workflow and assets management automated system within a company 
-                refers to a comprehensive database and infrastructure that tracks, organizes, and facilitates the approval 
-                process and management of company assets. This system provides a centralized platform for employees to 
-                submit requests, such as purchase requisitions or access permissions, and ensures that these requests follow
-                 a predefined workflow, with appropriate authorizations and reviews at each stage. Simultaneously, it 
-                 maintains a detailed inventory of the company's assets, ranging from physical equipment to digital resources,
-                  helping to streamline asset allocation, maintenance, and tracking. This integration of approval workflows and 
-                  asset management not only enhances operational efficiency but also promotes transparency and accountability, making 
-                  it an invaluable tool for modern organizations seeking to optimize resource allocation and regulatory compliance.                                                                
-            </p>
+            <h3>Should be a governmant registered and approved Organization</h3>
+            <h4>Will be able to Raise monetary Funds</h4>
+            <h4>Will be able to Raise Material Funds</h4>
+            <h4>Will be able to Sell Merchandise</h4>
+            <h4>Will be able to View and Manage Profile</h4>                                                                
+            
         </div>
     </div>
     <?php require APPROOT . '/views/includes/footer.php' ?>
